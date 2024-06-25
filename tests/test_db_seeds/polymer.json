@@ -1,0 +1,47 @@
+{
+  "Polymer": [
+    {
+      "pol_id": 10000,
+      "smiles": "*SCC(CC(*)=O)N=C=S",
+      "canonical_smiles": "[*]CC(CSC([*])=O)N=C=S"
+    }
+  ],
+  "PolymerFingerprint": [
+    {
+      "pol_id": 10000,
+      "key": "fp1",
+      "value": 1.0
+    },
+    {
+      "pol_id": 10000,
+      "key": "fp2",
+      "value": 2.0
+    },
+    {
+      "pol_id": 10000,
+      "key": "fp3",
+      "value": 3.0
+    }
+  ],
+  "PolymerProperty": [
+    {
+      "pol_id": 10000,
+      "prop": "Band gap",
+      "prop_unit": "eV",
+      "value": 3
+    },
+    {
+      "pol_id": 10000,
+      "prop": "Glass Transition Temperature",
+      "prop_unit": "K",
+      "value": 350
+    }
+  ],
+  "PolymerGeneration": [
+    {
+      "gen_id": 10000,
+      "pol_id": 10000,
+      "generation": 1
+    }
+  ]
+}

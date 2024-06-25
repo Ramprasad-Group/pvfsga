@@ -1,0 +1,44 @@
+{
+  "Reaction": [
+    {
+      "reaction_id": 10000,
+      "smarts": "[C:6]1[C:1][O:2][C:3](=[O:4])[C:5]1.[S:7]>>[C:6]1[C:1][O:2][C:3](=[S:7])[C:5]1.[O:4]"
+    },
+    {
+      "reaction_id": 10001,
+      "smarts": "[C:6]1[C:1][O:2][C:3](=[S:7])[C:5]1.[O:4]>>[*][C:3](=[O:2])[C:5][C:6][C:1][S:7][*].[O:4]"
+    }
+  ],
+  "ReactionStep": [
+    {
+      "reaction_id": 10000,
+      "reaction_procedure_id": 10000,
+      "step": 1
+    },
+    {
+      "reaction_id": 10001,
+      "reaction_procedure_id": 10000,
+      "step": 2
+    }
+  ],
+  "ReactionProcedure": [
+    {"reaction_procedure_id": 10000, "name": "test1"}
+  ],
+  "ReactionScaffoldMapping": [
+    {
+      "reaction_procedure_id": 10000,
+      "scaffold_id": 10000
+    },
+    {
+      "reaction_procedure_id": 10000,
+      "scaffold_id": 10001
+    }
+  ],
+  "ReactionPolymerMapping": [
+    {
+      "reaction_procedure_id": 10000,
+      "molecule_id": 10000,
+      "pol_id": 10000
+    }
+  ]
+}

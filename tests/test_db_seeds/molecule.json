@@ -1,0 +1,61 @@
+{
+  "Molecule": [
+    {
+      "molecule_id": 10000,
+      "smiles": "O=C1CC(N=C=S)CO1",
+      "scaffold_id": 10000
+    },
+    {
+      "molecule_id": 10001,
+      "smiles": "O=C1CC([H])CO1",
+      "scaffold_id": 10000
+    },
+    {
+      "molecule_id": 10002,
+      "smiles": "O=C1C([H])C(N=C=S)CO1",
+      "scaffold_id": 10001
+    }
+  ],
+  "Scaffold": [
+    {
+      "scaffold_id": 10000,
+      "structure": "O=C1CC([*:1])CO1"
+    },
+    {
+      "scaffold_id": 10001,
+      "structure": "O=C1C([*:2])C([*:1])CO1"
+    }
+  ],
+  "RGroup": [
+    {
+      "rgroup_id": 10000,
+      "smiles": "N=C=S"
+    },
+    {
+      "rgroup_id": 10001,
+      "smiles": "[H]"
+    }
+  ],
+  "RGroupMapping": [
+    {
+      "molecule_id": 10000,
+      "rgroup_id": 10000,
+      "index": 1
+    },
+    {
+      "molecule_id": 10001,
+      "rgroup_id": 10001,
+      "index": 1
+    },
+    {
+      "molecule_id": 10002,
+      "rgroup_id": 10000,
+      "index": 1
+    },
+    {
+      "molecule_id": 10002,
+      "rgroup_id": 10001,
+      "index": 2
+    }
+  ]
+}
