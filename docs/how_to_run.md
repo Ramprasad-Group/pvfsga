@@ -2,14 +2,14 @@
 ### [Poetry](https://python-poetry.org/)
 
 ```bash
-poetry add git+ssh://git@github.com/jdkern11/pvfsga.git#main
+poetry add git+ssh://git@github.com/Ramprasad-Group/pvfsga.git#main
 ```
 
 To specify a specific release, change main to the version number (v#.#.# e.g., v1.1.1). 
 
 Example:
 ```bash
-poetry add git+ssh://git@github.com/jdkern11/pvfsga.git#v1.1.0
+poetry add git+ssh://git@github.com/Ramprasad-Group/pvfsga.git#v1.1.0
 ```
 Once how you have setup this package with poetry, you can then use the below script to run the GA within the the poetry environment just established. 
 ## How to run
@@ -158,8 +158,10 @@ properties_target = {
     "sa_score": {"target": -3, "cap": False},
     "fake_Tg": {"target": 373, "cap": False},
     "fake_dH_eff": {"target": 10, "cap": False},
-} # Dictionary that contains the property name, target, and whether the property should be above or below the target value
-
+}
+# Dictionary that contains the property name, target, and whether the property should be above or below the target value
+# If cap is FALSE then the target is not a max value (cap), and the GA will try to obtain values that are equal to or greater than the target value.
+# if cap is TRUE, the property values should not exceed the target value, forming a max cap. The GA will try to obtain values equal to or less than the target value
 
 
 obj = main.GA_society(
