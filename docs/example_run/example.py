@@ -1,7 +1,6 @@
 import joblib
 import logging
 import sys
-#import list
 
 
 from pvfsga import main, run_model
@@ -133,15 +132,13 @@ for scaffold in scaffolds:
     scaffold_reaction_dict[scaffold] = list(reaction_dict.keys())
     
 
+print(scaffold_reaction_dict)
 ############### User-Defined Properties############
 properties_target = {
     "sa_score": {"target": -3, "cap": False},
     "fake_Tg": {"target": 373, "cap": False},
     "fake_dH_eff": {"target": 10, "cap": False},
-}
-# Dictionary that contains the property name, target, and whether the property should be above or below the target value
-# If cap is FALSE then the target is not a max value (cap), and the GA will try to obtain values that are equal to or greater than the target value.
-# if cap is TRUE, the property values should not exceed the target value, forming a max cap. The GA will try to obtain values equal to or less than the target value
+} # Dictionary that contains the property name, target, and whether the property should be above or below the target value
 
 
 
